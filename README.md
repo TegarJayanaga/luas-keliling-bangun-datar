@@ -1,36 +1,38 @@
-// luas-keliling-bangun-datar
+// luas-keliling-persegi
 // implementasi pointer array dan fungsi 
+
+
 #include <iostream>
 #include <cmath>
 using namespace std;
   
   
-  double luas_persegi(double sisi){
-  	double luas;
+  int luas_persegi(int sisi){
+  	int luas;
 	  luas = 0;
 	  luas = sisi * sisi;
 	  return luas;
   }
   
-  double keliling_persegi(double sisi){
-  	double keliling ;
+  int keliling_persegi(int sisi){
+  	int keliling ;
 	  keliling = 0;
 	  keliling = sisi * 4;
 	  return keliling;
   }
   
-  void cetak_luas(double s){
+  void cetak_luas(int s){
   	
   	  cout<<"luas persegi adalah : "<<luas_persegi(s)<<endl;
      }
   
-  void cetak_keliling(double s){
+  void cetak_keliling(int s){
   	
 	  cout<<"keliling persegi adalah : "<<keliling_persegi(s)<<endl;
   }
   
   int main(){
-  	double sisi[2];
+  	int sisi[2];
   	
   	for(int i=1 ; i<=2; i++){
   			sisi[2]=0;
@@ -50,11 +52,3 @@ using namespace std;
     }
     return 0;
     }
-  
-  
-  
-  
-  
-  
-   
-  
